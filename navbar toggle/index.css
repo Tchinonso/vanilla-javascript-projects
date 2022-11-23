@@ -1,0 +1,19 @@
+.social-icons{
+	display:none
+}
+
+/* by default hide links */
+.links{
+	height: 0;
+	overflow: hidden;
+}
+
+/* toggle class */
+.show-links{
+	height: 10rem;
+}
+
+/* links{
+	height: auto;
+	do this for your bigger screens
+} */
