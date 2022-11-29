@@ -1,0 +1,82 @@
+header{
+	min-height: 100vh;
+	position: relative;
+	display: grid;
+	place-items: center;
+}
+.video-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    z-index: -2;
+}
+h1{
+	color: ivory;
+	font-size: 150px;
+}
+header::after{
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: -1;
+}
+.switch-btn{
+	position: absolute;
+	bottom: 7%;
+	left: 7%;
+	width: 7rem;
+	height: 2rem;
+	display: flex;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: space-around;
+	border: none;
+	transition: 0.70s;
+}
+.switch-btn span{
+	display: inline-block;
+	font-size: 0.85rem;
+	cursor: pointer;
+	text-transform: capitalize;
+	color: red;
+}
+.switch{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: red;
+	border-radius: 10px;
+	margin: 0;
+	display: block;
+	transition: 0.70s;
+}
+.slide .switch{
+	left: 50%;
+}
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: bisque;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	visibility: visible;
+	z-index: 999;
+	transition: 0.70s;
+}
+.hide-preloader{
+	z-index: -999;
+	visibility: hidden;
+}
